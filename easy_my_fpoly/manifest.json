@@ -1,0 +1,31 @@
+{
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "version": "1.0.4",
+    "manifest_version": 3,
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2t7rGkDVxcV2iAtndCmhh59R/R3JWbGTiGLHBoMlexp52igMP0U2Hh4KTZT5w3DwNngZHFOOMrg04Pr7n+R/t8SRKtL1h1IOT7K0q9yxpCMuDd2KpcYnqWe3DuXCmut8UP4jb8Yse0M/ouliB5F/W91MVzZrVOameUIXJA3pk2u11pmc2MESuhm43FVkqbY1rGeYxpl53MiWRLCHP+c+6YG3QSqK/6ekpWePGuHsX6a5qrajZUzZ9D83NxTmoNyJD6zP8pTfkEDWw4n53xIH7PSqjZdTagn+K3Mbn1VtiDJOSsFW0wHEzl+wFQ/D2PR21S1Lg8Ayp3KFDpt6VjKjcwIDAQAB",
+    "name": "Easy My Fpoly",
+    "description": "Tiện ích trợ giúp trên hệ thống của trường cao đẳng FPT Polytechnic!",
+    "background": {
+        "service_worker": "js/background.js"
+    },
+    "action": {
+        "default_icon": {
+            "128": "/images/icon.png"
+        }
+    },
+    "icons": {
+        "128": "/images/icon.png"
+    },
+    "externally_connectable": {
+        "matches": [
+            "https://lms.poly.edu.vn/*"
+        ]
+    },
+    "permissions": [
+        "storage",
+        "management"
+    ],
+    "host_permissions": [
+        "*://*.poly.edu.vn/*"
+    ]
+}
