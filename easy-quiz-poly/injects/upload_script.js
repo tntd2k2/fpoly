@@ -1,0 +1,1 @@
+document.querySelector("#deliver input[type=file]").onchange=function(){chrome.storage.local.set({["file-"+this.files[0].name]:this.files[0].size})};

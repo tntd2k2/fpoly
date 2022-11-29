@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "Referer",
+          "operation": "set",
+          "value": "https://cms.poly.edu.vn"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "cms.poly.edu.vn",
+      "resourceTypes": ["main_frame", "xmlhttprequest"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": { "url": "https://quizpoly.xyz/huong-dan-my-fpoly" }
+    },
+    "condition": {
+      "urlFilter": "lms.poly.edu.vn/*checkpoint*",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]
